@@ -1,6 +1,5 @@
 package at.pxnet;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -10,7 +9,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ExerciseTest {
 
@@ -27,9 +26,9 @@ class ExerciseTest {
     }
 
     @CsvSource({
-            "0, The temperature is 32.0°F",
-            "-17.78, The temperature is 0.0°F",
-            "21, The temperature is 69.8°F",
+            "0, The temperature is 32.0 F",
+            "-17.78, The temperature is 0.0 F",
+            "21, The temperature is 69.8 F",
     })
     @ParameterizedTest
     void printTemperatureFahrenheit(float input, String expected) {

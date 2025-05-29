@@ -11,11 +11,11 @@ public class Exercise {
 
     /**
      * Convert the provided temperature from Celsius to Fahrenheit and print it.
-     * The output must have the format. "The temperature is 123.4°F"
+     * The output must have the format. "The temperature is 123.4 F"
      * The output must always contain exactly one decimal place
      */
     public static void printTemperatureFahrenheit(float celsius) {
-        System.out.println("The temperature is 0.0°F");
+        System.out.println("The temperature is 0.0 F");
     }
 
     /**
